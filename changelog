@@ -1,3 +1,30 @@
+-- 2020-05-31 --
+* Cleanup build commands and patch of Boost's user-config.jam
+
+-- 2020-04-18 --
+* Updated default boost version to 1.72.0
+* Fixed error "unknown argument: '-fcoalesce-templates'" when building with Xcode 11.4 (#45)
+
+-- 2020-04-08 --
+* Added shellcheck to CI
+* Fixed all shellcheck warnings
+
+-- 2019-09-20 --
+* Use bintray rather than sourceforge for downloads
+
+-- 2019-08-14 --
+* Fixed my being stupid, doing bash arrays wrong, and breaking everyone
+
+-- 2019-07-01 --
+* Added minimum version flags for the iOS and tvOS simulators
+* iOS Simulator binaries now only build to match the specified
+  iOS architecture - e.g. if you only build arm64, only the x86_64
+  simulator binary is produced, rather than both x86_64 and i386.
+* Fixed a problem trying to lipo universal binaries when built
+  binaries only contained a single architecture.
+* Updated README (a little).
+* Updated default minimum OS versions
+
 -- 2018-12-19 --
 * Added ability to compile debug variant (pr#35)
 
